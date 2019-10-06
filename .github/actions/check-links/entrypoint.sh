@@ -1,3 +1,7 @@
 #!/bin/bash
 
-find $GITHUB_WORKSPACE -name \*.md -exec markdown-link-check {} \;
+
+echo "Checking the following files:"
+cat /tmp/pr-files
+
+for i in $(cat /tmp/pr-files);do markdown-link-check $i;done

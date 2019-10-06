@@ -1,7 +1,9 @@
 #!/bin/sh
 
-cat $GITHUB_EVENT_PATH
+PR_ENDPOINT=$(jq -r ".pull_request._links.self.href" "$GITHUB_EVENT_PATH")
 
-PR_NUMBER=$(jq -r ".pull_request._links.self.href" "$GITHUB_EVENT_PATH")
+echo "Collecting changed files from $GITHUB_REPOSITORY"
 
-echo "Collecting information about PR #$PR_NUMBER of $GITHUB_REPOSITORY..."
+curl -s https://api.github.com/repos/tylerauerbeck/gh-actions/pulls/2/files | jq .[].filename > /tmp/pr-files
+
+
