@@ -1,9 +1,11 @@
 on: pull_request 
 name: List PR Files
 jobs:
-  list-my-files:
+  linting:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: list-file
         uses: ./.github/actions/list-pr-files
+      - name: check-link
+        uses: ./.github/actions/check-links

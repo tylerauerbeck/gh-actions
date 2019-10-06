@@ -1,0 +1,5 @@
+name: 'check-links'
+description: 'List broken links in files'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
