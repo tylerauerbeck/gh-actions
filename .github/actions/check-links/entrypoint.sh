@@ -2,6 +2,6 @@
 
 
 echo "Checking the following files:"
-cat /tmp/pr-files
+cat /github/home/pr-files
 
-for i in $(cat /tmp/pr-files);do markdown-link-check $i;done
+for i in $(cat /github/home/pr-files);do markdown-link-check $i;done
