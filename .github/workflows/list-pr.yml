@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: list-file
-        uses: tylerauerbeck/list-pr-files@master
+        uses: ./.github/actions/list-pr-files
