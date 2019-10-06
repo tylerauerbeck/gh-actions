@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo $GITHUB_EVENT_PATH
+cat $GITHUB_EVENT_PATH
 
 PR_NUMBER=$(jq -r ".issue.number" "$GITHUB_EVENT_PATH")
 
