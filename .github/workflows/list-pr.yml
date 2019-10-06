@@ -1,5 +1,5 @@
 on: pull_request 
-name: List PR Files
+name: PR Check
 jobs:
   linting:
     runs-on: ubuntu-latest
