@@ -1,0 +1,8 @@
+on: pull_request 
+name: List PR Files
+jobs:
+  list-my-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list-file
+        uses: tylerauerbeck/list-pr-files@master
