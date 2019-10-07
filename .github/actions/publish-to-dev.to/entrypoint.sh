@@ -17,4 +17,4 @@
 
 # if the action is a merge, publish : true
 
-cat /github/home/pr-files | egrep -i *.md$
+cat /github/home/pr-files | egrep -i *.md
