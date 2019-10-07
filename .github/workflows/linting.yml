@@ -11,3 +11,5 @@ jobs:
         uses: ./.github/actions/check-links
       - name: lint-markdown
         uses: ./.github/actions/lint-markdown
+      - name: dev.to-publish
+        uses: ./.github/actions/publish-to-dev.to

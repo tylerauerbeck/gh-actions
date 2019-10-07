@@ -1,0 +1,5 @@
+name: 'Publish Article'
+description: 'Publish Article to Dev.to'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
