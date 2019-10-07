@@ -9,3 +9,5 @@ jobs:
         uses: ./.github/actions/list-pr-files
       - name: check-link
         uses: ./.github/actions/check-links
+      - name: lint-markdown
+        uses: ./.github/actions/lint-markdown

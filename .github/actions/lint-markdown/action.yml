@@ -1,0 +1,5 @@
+name: 'lint-markdown'
+description: 'Lint markdown files'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
