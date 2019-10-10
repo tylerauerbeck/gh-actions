@@ -16,5 +16,5 @@ with open(PR, 'r') as files:
                 json = '{"article":{"body_markdown": "' + data + '"}}'
                 print(json)
             headers = {'content-type': 'application/json', 'api-key': API_KEY}
-            #r = requests.post(url = API_ENDPOINT, data = json, headers = headers)
-            #print(r)
+            r = requests.post(url = API_ENDPOINT, data = json, headers = headers)
+            print(r)
