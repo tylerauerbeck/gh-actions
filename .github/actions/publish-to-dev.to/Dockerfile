@@ -1,6 +1,9 @@
-FROM alpine:3.10
+FROM python:3
 
-RUN apk --no-cache add jq curl
+RUN pip install requests
+
+
+COPY publish.py /publish.py
 
 COPY entrypoint.sh /entrypoint.sh
 

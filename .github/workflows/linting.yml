@@ -13,3 +13,6 @@ jobs:
         uses: ./.github/actions/lint-markdown
       - name: dev.to-publish
         uses: ./.github/actions/publish-to-dev.to
+        env:
+          DEV_TO_TOKEN: ${{ secrets.DEV_TO_TOKEN }}
+          PR_LIST_FILE: "/github/home/pr-files" 

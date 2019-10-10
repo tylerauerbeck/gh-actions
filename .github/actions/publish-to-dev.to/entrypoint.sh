@@ -17,4 +17,4 @@
 
 # if the action is a merge, publish : true
 
-cat /github/home/pr-files | grep .*.md$ 
+python /publish.py
