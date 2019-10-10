@@ -15,6 +15,7 @@ with open(PR, 'r') as files:
                 data = file.read().replace('\n', '\\n')
                 json = '{"article":{"body_markdown": "' + data + '"}}'
                 print(json)
-            headers = {'content-type': 'application/json', 'api-key': API_KEY}
+                json.encode('utf-8')
+            headers = {'content-type': 'application/json; charset=utf-8', 'api-key': API_KEY}
             r = requests.post(url = API_ENDPOINT, data = json, headers = headers)
             print(r)
