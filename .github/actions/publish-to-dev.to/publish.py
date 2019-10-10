@@ -17,7 +17,7 @@ with open(PR, 'r') as files:
                 json = '{"article":{"body_markdown": "' + data + '"}}'
             headers = {'content-type': 'application/json; charset=utf-8', 'api-key': API_KEY}
             r = requests.post(url = API_ENDPOINT, data = json.encode('utf-8'), headers = headers)
-            if r.Response != 201:
+            if r.status_code != 201:
                 print("Unable to publish: " + line.strip())
                 STATUS=1
 
