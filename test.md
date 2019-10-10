@@ -1,3 +1,9 @@
+---
+title: Hello, Big World!
+tags: discuss, help
+series: Hello series
+---
+
 An h1 header
 ============
 
