@@ -9,4 +9,4 @@ jobs:
     steps:
     - name: Testing Kube
       run: |
-        echo "${{ on.schedule.cron }}"
+        cat /github/workflow/event.json 
