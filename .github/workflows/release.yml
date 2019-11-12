@@ -9,4 +9,4 @@ jobs:
     steps:
     - name: Testing Kube
       run: |
-        export
+        echo "${{ on.schedule.cron }}"
