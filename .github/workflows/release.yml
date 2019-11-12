@@ -9,4 +9,4 @@ jobs:
     steps:
     - name: Testing Kube
       run: |
-        cat /github/workflow/event.json 
+        echo $GITHUB_EVENT_PATH 
