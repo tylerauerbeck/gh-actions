@@ -1,7 +1,7 @@
 name: Release 	
 on: 	
   schedule:	
-    - cron: '*/30 * * * *'	
+    - cron: '*/5 * * * *'	
 jobs:	
   release:	
     name: Find crontab	
