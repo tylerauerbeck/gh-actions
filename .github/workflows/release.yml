@@ -1,0 +1,15 @@
+name: Release 	
+on: 	
+  schedule:	
+    - cron: '*/30 * * * *'	
+jobs:	
+  release:	
+    name: Find crontab	
+    runs-on: ubuntu-latest	
+    steps:	
+    - name: Testing Kube	
+      run: |	
+        echo $GITHUB_EVENT_PATH	
+        cat /home/runner/work/_temp/_github_workflow/event.json
+        echo $GITHUB_WORKSPACE
+        ls $GITHUB_WORKSPACE
